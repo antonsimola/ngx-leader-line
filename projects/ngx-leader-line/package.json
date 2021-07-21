@@ -1,6 +1,6 @@
 {
   "name": "ngx-leader-line",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "Leader-line Angular wrapper. Create SVG arrows and other connections between any HTML or Angular element!",
   "peerDependencies": {
