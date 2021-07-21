@@ -8,7 +8,7 @@
     "build": "ng build ngx-leader-line  && npm run copy:readme",
     "copy:readme": "copyfiles ./README.md ./dist/ngx-leader-line",
     "publish:demo": "git checkout gh-pages && ng build ngx-leader-line-demo --output-path=docs  --base-href=\"/ngx-leader-line/\"  && git add -A &&  git commit -m \"update gh-pages\" && git push && git checkout master",
-    "publish": "npm run build && npm run copy:readme &&  cd dist/ngx-leader-line  && npm publish",
+    "publish:lib": "npm run build && npm run copy:readme &&  cd dist/ngx-leader-line  && npm publish",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

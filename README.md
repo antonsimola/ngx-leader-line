@@ -1,7 +1,7 @@
 # ngx-leader-line
-[Demo and 'Documentation'](https://github.com/anseki/leader-line)
+[Demo and 'Documentation'](https://antonsimola.github.io/ngx-leader-line/)
 
-Create SVG arrows and other connections between any HTML or Angular element!
+Leader-line Angular wrapper. Create SVG arrows and other connections between any HTML or Angular element!
 
 It is an Angular wrapper for this library: [leader-line (GitHub)](https://github.com/anseki/leader-line).
 
