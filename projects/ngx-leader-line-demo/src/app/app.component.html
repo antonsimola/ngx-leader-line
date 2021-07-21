@@ -1,0 +1,67 @@
+<div fxLayout="column" style="padding: 32px">
+  <div fxLayout="row">
+    <mat-card>
+      <mat-card-title>Step 1: Install</mat-card-title>
+      <pre [ldrConnectTo]="dest1"><code highlight="{{'npm i leader-line-new ngx-leader-line'}}"
+                                        [languages]="['shell']"></code></pre>
+    </mat-card>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="end">
+    <mat-card>
+      <mat-card-title>Step 2: Import Module</mat-card-title>
+      <pre #dest1 [ldrConnectTo]="step3" [ldrOptions]="{startSocket: 'bottom', path:'grid'}"><code
+        [highlight]="step2Code" [languages]="['typescript']"></code></pre>
+    </mat-card>
+  </div>
+
+  <div fxLayout="column" fxLayoutGap="32px">
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card #step3="ldrDest" ldrDest [ldrConnectTo]="step4" [ldrOptions]="{endSocket: 'left', startSocket:'left'}">
+        <mat-card-title>Step 3: Use it!</mat-card-title>
+        If the destination is a standard HTML tag, then it's simple:
+        <pre><code [highlight]="step3Code" [languages]="['html']"></code></pre>
+      </mat-card>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card #step4="ldrDest" ldrDest>
+        <mat-card-title [ldrConnectTo]="step5" ldrStartSocket="right" [ldrColor]="color">Step 4: Angular components
+        </mat-card-title>
+        <mat-card-content>
+          <span>If the destination is an Angular component, use ldrDest like this:</span>
+          <pre><code [highlight]="step4Code" [languages]="['html']"></code></pre>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card #step5="ldrDest" #step5to6line="ldrConnector" ldrDest [ldrConnectTo]="step6" ldrStartSocket="bottom">
+        <mat-card-title>Step 5: Options</mat-card-title>
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <span>Pass options individually, or as a single object to [ldrOptions]</span>
+            <mat-form-field><input matInput type="color" [(ngModel)]="color"></mat-form-field>
+          </div>
+
+          <pre><code [highlight]="step5Code" [languages]="['html']"></code></pre>
+          <span>Read more about the options here: <a target="_blank" href="https://github.com/anseki/leader-line" >Leader Line Github</a></span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card #step6="ldrDest" ldrDest cdkDrag (cdkDragMoved)="step5to6line.position()">
+        <mat-card-title>Step 6: Drag me!</mat-card-title>
+      </mat-card>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>Source code of this demo:</mat-expansion-panel-header>
+        <pre><code [highlight]="demoSource" [languages]="['shell']"></code></pre>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+
+

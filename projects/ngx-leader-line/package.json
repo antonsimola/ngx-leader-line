@@ -1,0 +1,14 @@
+{
+  "name": "ngx-leader-line",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": ">10.0.0",
+    "@angular/core": ">10.0.0",
+    "leader-line-new": "^1.1.9"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "devDependencies": {
+  }
+}

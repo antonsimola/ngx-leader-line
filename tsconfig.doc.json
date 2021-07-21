@@ -1,0 +1,4 @@
+{
+  "include": ["src/projects/ngx-leader-line/**/*.ts"],
+  "exclude": ["src/test.ts", "src/**/*.spec.ts"]
+}
