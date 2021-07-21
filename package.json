@@ -1,6 +1,7 @@
 {
   "name": "ngx-leader-line",
   "version": "0.0.2",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "copyfiles": "copyfiles",
