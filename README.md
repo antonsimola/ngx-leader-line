@@ -5,7 +5,7 @@ Create SVG arrows and other connections between any HTML or Angular element!
 
 It is an Angular wrapper for this library: [leader-line (GitHub)](https://github.com/anseki/leader-line).
 
-However, it uses [this](https://www.npmjs.com/package/leader-line-new) fork as peerDependency (types and module import)
+However, it uses [this](https://www.npmjs.com/package/leader-line-new) fork as peerDependency (types and module export)
 
 # Usage
 
